@@ -1,7 +1,7 @@
-obj-m += TestLinuxKernelModule.o
+obj-m += testModule.o
 
-TestLinuxKernelModule-objs := init.o exit.o
-
+testModule-objs := init.o exit.o
+testModule-objs += mainFunction.o timedLogOutput.o
 
 PWD := $(CURDIR)
 

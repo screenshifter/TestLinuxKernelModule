@@ -1,6 +1,7 @@
 #include <linux/init.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
+#include "mainFunction.h"
 
 
 MODULE_LICENSE("MIT");
@@ -22,6 +23,8 @@ static int __init initModule(void)
 {
 	pr_info("Test module started\r\n");
 	pr_info("%s\r\n", inputParameters);
+	
+	mainFunction();
 	
 	return 0;
 }
