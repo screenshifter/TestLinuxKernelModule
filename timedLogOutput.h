@@ -1,10 +1,10 @@
 #ifndef TIMEDLOGOUTPUT_H
 #define TIMEDLOGOUTPUT_H
 
-//#include <stdbool.h>
+#include <linux/types.h>
 
 
-int timedLogOutput_printMessages(int amount, char *message);
+bool timedLogOutput_printMessages(int amount, char *message);
 
 
 #endif
